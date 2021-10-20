@@ -14,6 +14,9 @@
     color: white;
     line-height: 30px;
 }
-.title:hover{
+.card-container:hover title{
 color: royalblue;
+}
+.card-container:hover{
+    border: 2px solid royalblue;
 }
