@@ -1,0 +1,16 @@
+.card-container{
+    height: 500px;
+    width: 400px;
+    padding: 10px;
+    
+}
+.card-img{
+    
+    height: 200px;
+   
+}
+.card-container a{
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}

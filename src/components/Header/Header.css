@@ -1,0 +1,25 @@
+
+.header{
+   
+    color:cornflowerblue;
+    padding: 10px;
+    background-color:aliceblue;
+    border: 1px solid lightgrey;
+    
+}
+.header a{
+text-decoration: none;
+margin-right: 20px;
+font-size: 17px;
+color: black;
+}
+.search{
+    width: 20%;
+    display: flex;
+}
+.logo{
+    width: 70px;
+    height: 50px;
+    margin-left: 60px;
+    margin-right: -30px;
+}

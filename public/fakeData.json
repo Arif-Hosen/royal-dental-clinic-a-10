@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Dental Consultation",
+      "img": "https://image.freepik.com/free-photo/dentist-talking-worried-woman-during-dental-checkup_329181-20771.jpg",
+      "description": "The dental consultation is where your dentist will discuss your oral and overall health. They will review your dental x-rays and discuss their findings from the dental exam. "
+    },
+    {
+      "id": 2,
+      "name": "Tooth Extraction",
+      "img": "https://image.freepik.com/free-photo/dentist-making-professional-teeth-cleaning-withb-cotton-female-young-patient-dental-office_496169-907.jpg",
+      "description": "We provide Tooth extraction by a dentist or oral surgeon and is a relatively quick outpatient procedure with either local, general, intravenous anesthesia, or a combination. "
+    },
+    {
+      "id": 3,
+      "name": "Root Canal",
+      "img": "https://image.freepik.com/free-photo/professional-dentist-examining-patient-with-dental-microscope_23-2147862052.jpg",
+      "description": "Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth. Root canal treatment is not painful and can save a tooth that might otherwise have to be removed completely."
+    },
+    {
+      "id": 4,
+      "name": "Removable Partial Denture",
+      "img": "https://img.freepik.com/free-photo/dentist-examining-female-patient-teeth_107420-65312.jpg?size=338&ext=jpg",
+      "description": "Removable partial dentures usually consist of replacement teeth attached to pink or gum-colored plastic bases. Depending on your needs, your dentist will design a partial denture for you. "
+    },
+    {
+      "id": 5,
+      "name": "Upper and Lower Denture",
+      "img": "https://image.freepik.com/free-photo/stomatologist-doctor-explaining-proper-dental-hygiene-patient-holding-sample-human-jaw_158595-7678.jpg",
+      "description": "If you are in need of replacing an entire arch of teeth, a full arch denture is going to be the most affordable tooth-replacement option. Additionally, not having any teeth causes mild to severe physical changes in your face mouth and lips"
+    },
+    {
+      "id": 6,
+      "name": "Teeth Whitening",
+      "img": "https://image.freepik.com/free-photo/female-patient-receiving-dental-treatment_107420-65420.jpg",
+      "description": "Teeth whitening involves bleaching your teeth to make them lighter. It can nost make your teeth brilliant white, but it can lighten the existing colour by several shades."
+    }
+  ]

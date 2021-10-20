@@ -1,0 +1,25 @@
+.login a{
+    text-decoration: none;
+    color: blue;
+    margin-right: 10px;
+    
+}
+.login{
+    margin-top: 20px;
+    border: 1px solid lightslategrey;
+    padding: 30px;
+    background-color: lightgrey;
+    box-shadow: 15px 15px 10px   black;
+}
+.login :hover{
+    color:orangered;
+   
+}
+.log{
+    padding: 20px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+    url('https://image.freepik.com/free-photo/dentist-making-professional-teeth-cleaning-withb-cotton-female-young-patient-dental-office_496169-907.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
