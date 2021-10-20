@@ -21,7 +21,7 @@ const Service = (props) => {
             <Card className="card-container mt-3 ">
                 <Card.Img className="card-img img-fluid" variant="top" src={img} />
                 <Card.Body>
-                    <Card.Title>{name}</Card.Title>
+                    <Card.Title className='title'>{name}</Card.Title>
                     <Card.Text>{description}</Card.Text>
                 </Card.Body>
                 <Link className='bg-primary text-center' to={`/services/${id}`}>Details</Link>
