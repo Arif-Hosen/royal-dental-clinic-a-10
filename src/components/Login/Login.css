@@ -11,9 +11,14 @@
     background-color: lightgrey;
     box-shadow: 15px 15px 10px   black;
 }
-.login :hover{
-    color:orangered;
-   
+
+.login-title{
+    transition: transform 1s;
+}
+
+.login:hover .login-title{
+    transform: translate(25%);
+    color: royalblue;
 }
 .log{
     padding: 20px;

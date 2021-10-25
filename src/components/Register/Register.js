@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import './Register.css'
 
 
 const Register = () => {
@@ -13,7 +14,7 @@ const Register = () => {
     return (
         <div className="login d-flex justify-content-center">
             <div>
-                <h2>Create Account</h2>
+                <h2 className='register-title'>Create Account</h2>
                 <Form onSubmit={handleRegistration}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Your Name</Form.Label>

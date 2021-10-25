@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import Services from '../Services/Services';
 import './Home.css'
 
@@ -45,7 +45,13 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <Services></Services>
+
+            <Row>
+
+                <Services></Services>
+
+            </Row>
+
 
         </div>
     );

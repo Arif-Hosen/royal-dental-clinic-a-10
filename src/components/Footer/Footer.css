@@ -6,3 +6,22 @@
 .footer a{
     color: white;
 }
+.fab{
+    font-size: 25px;
+    margin: 10px;
+    background-color:darkseagreen;
+    border-radius: 50px;
+    padding:10px
+}
+.fa-facebook:hover{
+    background-color: white;
+    color:darkgreen;
+}
+.fa-youtube:hover{
+    background-color: white;
+    color:darkgreen;
+}
+.fa-linkedin:hover{
+    background-color: white;
+    color:darkgreen;
+}

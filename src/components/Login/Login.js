@@ -1,21 +1,38 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import './Login.css'
 
 import useAuth from '../../hooks/useAuth';
 
 
 
+
 const Login = () => {
     const { signInUsingGoogle, handleLogin, handleEmailChange, handlePasswordChange } = useAuth();
+
     const location = useLocation();
+    const history = useHistory();
 
+    const logHandler = (e) => {
+        e.preventDefault();
+        handleLogin()
+            .then((res) => {
+                history.push(location.state?.from)
+            })
+    }
 
+    // const redirect_uri = location?.state.from || '/home';
+
+    // const logHandler = () => {
+    //     // history.push(redirect_uri);
+    //     history.push(location.state?.from)
+
+    // }
     return (
         <div className="log d-flex justify-content-center">
             <div className="login">
-                <h2 className="text-primary">Log In</h2>
+                <h2 className=" login-title">Log In</h2>
                 <Form onSubmit={handleLogin
                 }>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -31,7 +48,7 @@ const Login = () => {
                         <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" />
                     </Form.Group>
 
-                    <Button className="mb-5" variant="primary" type="submit">
+                    <Button onClick={logHandler} className="mb-5" variant="primary" type="submit">
                         Submit
                     </Button>
                 </Form>
