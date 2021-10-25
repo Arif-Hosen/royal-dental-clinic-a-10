@@ -26,6 +26,15 @@ const Login = () => {
             })
     }
 
+    // goole sign in button handler
+    const googleHandler = (e) => {
+        e.preventDefault();
+        signInUsingGoogle()
+            .then((res) => {
+                history.push(location.state?.from)
+            })
+    }
+
 
     return (
         <div className="log d-flex justify-content-center">
@@ -54,7 +63,7 @@ const Login = () => {
                 <small className="me-4 ">New to Royal Dental Clinic?</small>
                 <Link to="/register">Register Now</Link>
                 <div className="mt-3 mb-3">---------------------or---------------------</div>
-                <Button onClick={signInUsingGoogle} variant="warning">Google Sign In</Button>
+                <Button onClick={googleHandler} variant="warning">Google Sign In</Button>
             </div>
 
         </div>

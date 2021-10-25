@@ -33,7 +33,7 @@ const useFirebase = () => {
         e.preventDefault();
     }
 
-    const handleLogin = e => {
+    const handleLogin = () => {
         // e.preventDefault();
         return signInWithEmailAndPassword(auth, email, password)
         // .then(result => {
@@ -51,13 +51,15 @@ const useFirebase = () => {
     const auth = getAuth();
 
     const signInUsingGoogle = () => {
-        setIsLoading(true);
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                const { user } = result.user;
-                console.log(user);
-            })
-            .finally(() => setIsLoading(false))
+
+        // setIsLoading(true);
+        return signInWithPopup(auth, googleProvider)
+        // .then(result => {
+        //     const { user } = result.user;
+        //     console.log(user);
+        // })
+        // .finally(() => setIsLoading(false))
+
     }
 
     const logOut = () => {
