@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
 const ServiceDescription = () => {
+    // get id from route
     let { id } = useParams();
     const [details, setDetails] = useState([]);
     const [singleDetails, setSingleDetails] = useState({});
 
 
-
-
+    // data load
     useEffect(() => {
         fetch('/fakeData.json')
             .then(res => res.json())
@@ -17,7 +17,7 @@ const ServiceDescription = () => {
     }, [])
     console.log(details);
 
-
+    // idivitual data check and set a state after details state change
     useEffect(() => {
         const singleService = details.find(service => service.id == id)
         setSingleDetails(singleService);
@@ -25,6 +25,7 @@ const ServiceDescription = () => {
     }, [details])
 
     return (
+        // specific service page
         <div className=' mt-5'>
             <h2 className='text-center text-primary'>Description</h2>
             <div className='d-flex mt-5'>

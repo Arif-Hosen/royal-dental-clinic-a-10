@@ -8,7 +8,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
 
-    // email,password
+    // email,password authenticaion
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -46,7 +46,7 @@ const useFirebase = () => {
         // });
     }
 
-    // google signIn
+    // google signIn authentication
     const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
 

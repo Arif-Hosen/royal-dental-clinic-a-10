@@ -3,6 +3,8 @@ import './About.css';
 
 const About = () => {
     return (
+        // about page content
+
         <div className='about  text-center'>
             <h2 className='p-5'>About Royal Dental Clinic</h2>
             <img src="https://image.freepik.com/free-vector/dental-clinic-with-abstract-background_1419-1933.jpg" alt="" />

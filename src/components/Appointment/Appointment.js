@@ -8,6 +8,8 @@ const Appointment = () => {
             <h5 style={{ backgroundColor: 'lightgray', color: 'red', textAlign: 'center', padding: '20px' }}>Please fillup appointment fields to get appoinment..</h5>
             <div className='w-50 mx-auto mt-5 pb-5'>
 
+                {/* react-bootstrap form */}
+
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Your email</Form.Label>

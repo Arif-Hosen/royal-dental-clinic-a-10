@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = (props) => {
+    // destructure from props
     const { id, name, img, description } = props.service;
 
     return (
 
+        // react-bootstrap responsive card
         <Col lg={4} sm={12}>
             <Card className="card-container mt-5 ">
                 <Card.Img className="card-img img-fluid" variant="top" src={img} />

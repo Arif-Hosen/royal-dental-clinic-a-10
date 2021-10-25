@@ -6,29 +6,27 @@ import './Login.css'
 import useAuth from '../../hooks/useAuth';
 
 
-
-
 const Login = () => {
+    // destucture from useAuth
     const { signInUsingGoogle, handleLogin, handleEmailChange, handlePasswordChange } = useAuth();
+
 
     const location = useLocation();
     const history = useHistory();
 
+    // log button event handler
     const logHandler = (e) => {
+        // prevent default reload behavior of form
         e.preventDefault();
+
+        // handle login function call and redirect to page, where we would be go
         handleLogin()
             .then((res) => {
                 history.push(location.state?.from)
             })
     }
 
-    // const redirect_uri = location?.state.from || '/home';
 
-    // const logHandler = () => {
-    //     // history.push(redirect_uri);
-    //     history.push(location.state?.from)
-
-    // }
     return (
         <div className="log d-flex justify-content-center">
             <div className="login">

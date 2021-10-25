@@ -1,3 +1,4 @@
+// firebase configration
 const firebaseConfig = {
     apiKey: "AIzaSyDcsPFu-sr6l5MdQloMmWfcmHbozfw1M5U",
     authDomain: "royal-dental-clinic-fa9f7.firebaseapp.com",

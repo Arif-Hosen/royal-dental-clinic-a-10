@@ -7,11 +7,12 @@ import './Register.css'
 
 const Register = () => {
 
-
+    // destructure from useAuth
     const { signInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error } = useAuth();
 
 
     return (
+        // registration page
         <div className="login d-flex justify-content-center">
             <div>
                 <h2 className='register-title'>Create Account</h2>

@@ -3,6 +3,8 @@ import './Footer.css';
 
 const Footer = () => {
     return (
+
+        // footer
         <div style={{
             backgroundColor: 'darkslategray',
             color: 'white'
@@ -27,6 +29,8 @@ const Footer = () => {
                     <p>Dhanmondi-A, Dhaka ,Bangladesh</p>
                     <p> Email: royaldentalclinic@gmail.com</p>
                     <p>Helpline : 0199999788(Available : 24 hours/ 7 days)</p>
+
+                    {/* fontawesome icon */}
                     <p><a href="#"><i className="fab fa-facebook"></i></a>
                         <a href="#"><i className="fab fa-youtube"></i></a>
                         <a href="#"> <i className="fab fa-linkedin"></i></a></p>

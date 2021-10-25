@@ -6,7 +6,7 @@ import './Home.css'
 const Home = () => {
     return (
         <div className="home">
-
+            {/* react-bootstrap carousel */}
             <Carousel fade className="carosel-container ">
                 <Carousel.Item>
                     <img
@@ -45,7 +45,7 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
 
-
+            {/* services */}
             <Row>
 
                 <Services></Services>

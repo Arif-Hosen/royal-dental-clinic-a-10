@@ -16,14 +16,11 @@ const Header = () => {
         // header
         <div className='header mt-0'>
 
-
-
-
-
-
             < Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
                 <Container>
+                    {/* fontawesome icon */}
                     <i className="fas fa-tooth"></i>
+                    {/* react-bootstrap navigation */}
                     <Navbar.Brand className='name' as={NavLink} to="/home">Royal Dental Clinic</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -41,10 +38,10 @@ const Header = () => {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item as={NavLink} to="/register">Register</NavDropdown.Item>
                             </NavDropdown>
-
+                            {/* if have email, display  loguout and name , if not display login nav*/}
                             {user.email ?
                                 <span className='ms-4'>
-                                    <small >{user.displayName}</small>
+                                    <small className='text-light'>{user.displayName}</small>
                                     <button style={{ color: 'blue', border: ' 1px solid blue', borderRadius: ' 5px', marginLeft: '5px' }} onClick={logOut}>Logout</button>
                                 </span>
                                 : <Nav.Link style={{ color: 'white' }} as={NavLink} to="/login" >Log in</Nav.Link>
